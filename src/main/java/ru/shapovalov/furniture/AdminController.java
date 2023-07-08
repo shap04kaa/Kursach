@@ -1,11 +1,8 @@
 package ru.shapovalov.furniture;
 
-import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
@@ -76,9 +73,6 @@ public class AdminController  {
 
             Label newLineLabel = new Label("Новая линия:");
             TextField newLineText = new TextField();
-
-            Label orderLabel = new Label("Новая линия:");
-            TextField orderText = new TextField();
 
             Button addButton = new Button("Добавить");
             addButton.setOnAction(addEvent -> {
