@@ -83,13 +83,10 @@ public class AuthScene extends Application {
         Label newPasswordLabel = new Label("New password:");
         newPasswordField = new PasswordField();
         newPasswordField.setPromptText("Enter new password");
-        Label confirmPasswordLabel = new Label("Confirm password:");
-        PasswordField confirmPasswordField = new PasswordField();
-        confirmPasswordField.setPromptText("Confirm your password");
 
         registrationButton = new Button("Register");
         //registrationButton.setStyle("-fx-background-color: #2F4F4F; -fx-text-fill: #FFFFFF;");
-        registrationLayout.getChildren().addAll(registrationLabel, newLoginLabel, newLoginField, newPasswordLabel, newPasswordField, confirmPasswordLabel, confirmPasswordField, registrationButton);
+        registrationLayout.getChildren().addAll(registrationLabel, newLoginLabel, newLoginField, newPasswordLabel, newPasswordField, registrationButton);
 
         TabPane mainLayout = new TabPane();
         mainLayout.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
